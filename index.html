@@ -8,38 +8,44 @@
 </head>
 <body>
 
-    <h2>Select University and Department</h2>
+    <h2>Select University, Department, and Specialization</h2>
 
-    <div class="form-group">
-        <label for="university">University:</label>
-        <select id="university">
-            <option value="">Select University</option>
-            <option value="Kabul">Kabul University</option>
-            <option value="Rana">Rana University</option>
-            <option value="American">American University of Afghanistan</option>
-        </select>
+    <div class="form-container">
+        <div class="form-group">
+            <label for="university">University:</label>
+            <select id="university">
+                <option value="">Select University</option>
+                <option value="Kabul">Kabul University</option>
+                <option value="Rana">Rana University</option>
+                <option value="American">American University of Afghanistan</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="department">Department:</label>
+            <select id="department" disabled>
+                <option value="">Select Department</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="specialization">Specialization:</label>
+            <select id="specialization" disabled>
+                <option value="">Select Specialization</option>
+            </select>
+        </div>
     </div>
 
-    <div class="form-group">
-        <label for="department">Department:</label>
-        <select id="department">
-            <option value="">Select Department</option>
-            <option value="BCS">Computer Science</option>
-            <option value="BA">Business Administration</option>
-            <option value="LP">Law and Politics</option>
-        </select>
-    </div>
-
-    <table id="specializationsTable">
+    <table id="studentsTable" style="display:none;">
         <thead>
             <tr>
-                <th>University</th>
-                <th>Department</th>
-                <th>Specializations</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>ID</th>
+                <th>Email</th>
             </tr>
         </thead>
-        <tbody id="specializationsBody">
-        </tbody>
+        <tbody id="studentsBody"></tbody>
     </table>
 
     <script src="mycode.js"></script>
