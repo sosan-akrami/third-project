@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>University and Department Selection</title>
+    <title>University, Department, Specialization Selection</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,43 +11,35 @@
     <h2>Select University, Department, and Specialization</h2>
 
     <div class="form-container">
-        <div class="form-group">
-            <label for="university">University:</label>
-            <select id="university">
-                <option value="">Select University</option>
-                <option value="Kabul">Kabul University</option>
-                <option value="Rana">Rana University</option>
-                <option value="American">American University of Afghanistan</option>
-            </select>
-        </div>
+        <label for="university">University:</label>
+        <select id="university">
+            <option value="">Select University</option>
+        </select>
 
-        <div class="form-group">
-            <label for="department">Department:</label>
-            <select id="department" disabled>
-                <option value="">Select Department</option>
-            </select>
-        </div>
+        <label for="department">Department:</label>
+        <select id="department" disabled>
+            <option value="">Select Department</option>
+        </select>
 
-        <div class="form-group">
-            <label for="specialization">Specialization:</label>
-            <select id="specialization" disabled>
-                <option value="">Select Specialization</option>
-            </select>
-        </div>
+        <label for="specialization">Specialization:</label>
+        <select id="specialization" disabled>
+            <option value="">Select Specialization</option>
+        </select>
     </div>
 
-    <table id="studentsTable" style="display:none;">
+    <table id="studentsTable" style="display: none;">
         <thead>
             <tr>
-                <th>First Name</th>
+                <th>Name</th>
                 <th>Last Name</th>
                 <th>ID</th>
                 <th>Email</th>
             </tr>
         </thead>
-        <tbody id="studentsBody"></tbody>
+        <tbody id="studentsBody">
+        </tbody>
     </table>
 
-    <script src="mycode.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
