@@ -9,7 +9,7 @@ dotenv.config();
 app.use(cors());
 
 
-app.get("/", (req, res)=> res.json({message: "The API Server is running!"}))
+app.get("/", (req, res)=> res.json({message: "The API server is running!"}))
 
 // API Endpoints
 app.get('/api/universities', async (req, res) => {
